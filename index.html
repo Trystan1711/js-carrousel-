@@ -19,14 +19,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
 <script>
-  var mesphotos = []
+  var mesphotos = ["../img/Bootstrap_logo.svg.png","../img/html.png", "../img/js.png"]
   var images_en_cours = 0;
   function Suivant () {
-     images_en_cours =  + 1;
+     images_en_cours = images_en_cours + 1;
      if(images_en_cours >=mesphotos.length){
-     images_en_cours = 0;
+        images_en_cours = 0;
     }
-  document.getElementById("ecran").src= "images/" + mesphotos[images_en_cours];
+    document.getElementById("ecran").src= "" + mesphotos[images_en_cours];
  }
 
  function Précédent(){
@@ -34,7 +34,7 @@
      if(images_en_cours <0){
       images_en_cours = mesphotos.length -1;
      }
-  document.getElementById("ecran").src= "images/" + mesphotos[images_en_cours];
+  document.getElementById("ecran").src= "" + mesphotos[images_en_cours];
  }
 
 
